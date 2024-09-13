@@ -1,6 +1,29 @@
-h1.title {
+h1.center-title{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
     font-family: "Whirly Birdie", sans-serif;
     font-variation-settings:'wght' 100, 'wdth' 150, 'ital' 0;
     font-size:3vw;
-    text-align: center;
+    text-align: center center;
+    transform: translate(-50%, -50%);
+    letter-spacing: -0.3vw;
+}
+
+h1.title-outline {
+    color: transparent; /* Make the fill color transparent */
+    -webkit-text-stroke: 3px rgb(212, 46, 74); /*Outline color and width */
+    z-index: 0;
+}
+
+h1.title-fill {
+    color: white; /* Make the fill color transparent */
+    z-index: 1;
+}
+
+h1.title-solid {
+    color: rgb(212, 46, 74);
+    z-index: 2;
+    white-space: pre;
 }
