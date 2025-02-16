@@ -1,29 +1,69 @@
-h1.center-title{
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
+/*h1.center-title{
     font-family: "Whirly Birdie", sans-serif;
     font-variation-settings:'wght' 100, 'wdth' 150, 'ital' 0;
     font-size:3vw;
     text-align: center center;
-    transform: translate(-50%, -50%);
     letter-spacing: -0.3vw;
+    line-height: 0;
+}*/
+
+.ph-title{
+
+    font-family: "Whirly Birdie", sans-serif;
+    font-variation-settings:'wght' 100, 'wdth' 150, 'ital' 0;
+    font-size:3vh;
+    letter-spacing: -0.3vw;
+    line-height: 0;
+
 }
 
-h1.title-outline {
+
+.center-title{
+
+    position: absolute;
+    font-family: "Whirly Birdie", sans-serif;
+    font-variation-settings:'wght' 100, 'wdth' 150, 'ital' 0;
+    font-size:3vw;
+    text-align: center center;
+    letter-spacing: -0.3vw;
+    line-height: 0;
+}
+
+.title-outline {
     color: transparent; /* Make the fill color transparent */
     -webkit-text-stroke: 3px rgb(212, 46, 74); /*Outline color and width */
     z-index: 0;
 }
 
-h1.title-fill {
+.title-fill {
     color: white; /* Make the fill color transparent */
     z-index: 1;
 }
 
-h1.title-solid {
+.title-solid {
     color: rgb(212, 46, 74);
     z-index: 2;
-    white-space: pre;
+}
+
+.reconstruction {
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    font-family: "Whirly Birdie", sans-serif;
+    font-variation-settings:'wght' 75, 'wdth' 50, 'ital' 0;
+    font-size:6vw;
+    text-align: center center;
+    transform: translate(-50%, -50%);
+    letter-spacing: -0.1vw;
+}
+
+
+.svg-text{
+    font-size:  18px;
+    paint-order: stroke;
+    stroke: #000000;
+    stroke-width: 1px;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    font-weight: 800;
 }

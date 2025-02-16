@@ -1,0 +1,192 @@
+
+h1 {
+    font-size: 3.5em;
+    letter-spacing: -4px;
+    color: #ff0000;/*#d30049;*//*#AA0000;*/
+    text-align: left;
+}
+
+h4 {
+    margin-top: -3.2em;
+    /*padding: 5px 5px;*/
+    margin-left: 3px;
+    margin-right: -3px;
+    padding: 5px 5px;
+    font-family: 'Miriam Libre', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: left;
+    font-size: 1.2em;
+    color: #ff0000;
+    /*background-color: #ff0000;*/
+
+}
+
+p {
+    font-family: 'Miriam Libre', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 1.05em;
+    color: #ffffff;
+    opacity: 0.75;
+    margin-top: -0.75em;
+
+    /*background-color: #ff0000;*/
+}
+
+div.content {
+    /*text-align: center;*/
+    width: fit-content;
+    margin-left: 120px;
+}
+
+div.filler {
+    padding-top: 20vh;
+    width: 100%;
+}
+
+section.container {
+    min-height: 30vh;
+    height: auto;
+    width: 50vw;
+    display: flex;
+}
+
+section.gradient {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    height: fit-content;
+    padding-bottom: 10vh;
+}
+
+section.filler {
+    height: 50vh;
+    width: 100%;
+    margin-top: 0;
+}
+
+#whois {
+    padding-top: 30vh;
+}
+
+div.center {
+    margin: 0 auto;
+}
+
+#myVideo {
+    z-index: -1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: auto;
+    height: auto;
+}
+
+#whois {
+    height: 50vh;
+}
+
+#projects {
+    width: 60vw;
+}
+
+div.projects-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: min-content;
+
+}
+
+div.image-container {
+    padding: 0;
+    margin: 0;
+}
+
+div.project-block {
+    display: flex;
+    margin-top: 15px;
+    /*background-color: #ddd;*/
+}
+
+h5.project-title {
+    font-size: 1.3em;
+    color: #f00;
+    text-align: left;
+    font-family: 'Miriam Libre', sans-serif;
+    font-weight: 550;
+    /*background-color: #f00;*/
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+div.project-desc {
+    padding-left: 25px;
+    /*background-color: #d81159;*/
+    width: 30vw;
+    background-image: linear-gradient(to right, rgba(64, 0, 0, 1), rgba(32, 0, 0, 0.9), rgba(32, 0, 0, 0));
+    /*transform: skewX(-15deg) scale(1, 1) translate(-25px, 0px);*/
+}
+
+
+img.cover-img {
+    /*width:  100%;*/
+    float: left;
+    width:  250px;
+    height: 250px;
+    object-fit: cover;
+
+}
+
+img.pixel {
+    /*Lets see if firefox likes this*/
+    image-rendering: pixelated;
+}
+
+img.hidden{
+    width:0px;
+    height:0px;
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+}
+
+img.play-gif{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+.animate-flicker {
+    -webkit-animation: flickerAnimation 4s infinite;
+    -moz-animation: flickerAnimation 4s infinite;
+    -o-animation: flickerAnimation 4s infinite;
+    animation: flickerAnimation 4s infinite;
+}
