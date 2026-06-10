@@ -1,0 +1,3 @@
+[submodule "NetGochi"]
+	path = NetGochi
+	url = https://github.com/devgrater/NetGochi
